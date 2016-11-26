@@ -1,5 +1,5 @@
 package ru.jskills.git;
 
 public enum Model {
-    Tahoe, C63AMG
+    Tahoe, C63AMG, M3
 }
