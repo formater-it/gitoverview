@@ -15,6 +15,7 @@ public class Program {
         try {
             Class<?> c = new Car(Model.Tahoe).getClass();
             Method m = c.getMethod("getModel");
+            //Method m = c.getMethod("getModel", String.class, int.class); - доп. параметры для поиска метода с аргументами, если они есть
             MyAnnotation myAnnotation = m.getAnnotation(MyAnnotation.class);
             System.out.println("str = " + myAnnotation.str() + " val = " + myAnnotation.val());
         } catch (NoSuchMethodException e) {
